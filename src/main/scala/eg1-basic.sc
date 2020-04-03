@@ -1,6 +1,5 @@
 println("Hello world!")
 
-
 //1 Variables
 val immutableVariable = "blue"
 var mutableVariable = "red"
@@ -14,6 +13,13 @@ immutableVariable match {
   case "yellow" => print("purple")
   case "red" => print("green")
   case _ => print("not a primary color")
+}
+
+var obj = null
+obj match {
+  case s: String => Integer.parseInt(s) 
+  case _: BigInt => Int.MaxValue 
+  case _ => 0 
 }
 
 //Functions and Methods
@@ -33,3 +39,5 @@ class Person{
 }
 // Creating an object of the Person class
 val firstPerson = new Person
+firstPerson.walking
+firstPerson.talking
