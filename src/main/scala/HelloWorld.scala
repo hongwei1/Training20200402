@@ -1,3 +1,10 @@
+//public class Main {
+//  public static void main(String[] args) {
+//    System.out.println("This will be printed");
+//  }
+//}
+//==> Syntactic sugar.
+
 object Main extends App {
   println("Hello world!")
 }
